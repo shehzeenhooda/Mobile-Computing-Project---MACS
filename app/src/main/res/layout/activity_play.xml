@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presenter.PlayActivity"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X I I   M A T C H"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!-- This layout is used to create the cards for the computer   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="96dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="4dp"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_1"
+            android:layout_width="62dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="8dp"
+            >
+            <TextView
+                android:id="@+id/Rank1"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="113dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@raw/player1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="4dp"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_2"
+            android:layout_width="62dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="8dp"
+            >
+            <TextView
+                android:id="@+id/Rank2"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="113dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@raw/player2"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_3"
+            android:layout_width="62dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="8dp"
+            android:layout_marginRight="4dp"
+            >
+
+            <TextView
+                android:id="@+id/Rank3"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="113dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@raw/player3"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="4dp"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_4"
+            android:layout_width="62dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="8dp"
+            >
+
+            <TextView
+                android:id="@+id/Rank4"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="113dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@raw/player4"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="4dp"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_5"
+            android:layout_width="62dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="8dp"
+            >
+
+            <TextView
+                android:id="@+id/Rank5"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="113dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@raw/player5"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginRight="4dp"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_6"
+            android:layout_width="62dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="8dp"
+            >
+
+            <TextView
+                android:id="@+id/Rank6"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="113dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@raw/player6"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <!-- This layout is used to create the cards for the computer   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:orientation="horizontal"
+        >
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_7"
+            android:layout_width="62dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="8dp"
+            android:layout_marginRight="4dp"
+            >
+            <TextView
+                android:id="@+id/Rank7"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="113dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@raw/player7"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_8"
+            android:layout_width="62dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="4dp"
+            android:layout_marginRight="4dp"
+            >
+            <TextView
+                android:id="@+id/Rank8"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="113dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@raw/player8"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_9"
+            android:layout_width="62dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="4dp"
+            android:layout_marginRight="4dp"
+
+            >
+            <TextView
+                android:id="@+id/Rank9"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="113dp" />
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@raw/player9"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_10"
+            android:layout_width="62dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            card_view:cardCornerRadius="4dp">
+            <TextView
+                android:id="@+id/Rank10"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="113dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@raw/player10"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_11"
+            android:layout_width="62dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            card_view:cardCornerRadius="4dp">
+            <TextView
+                android:id="@+id/Rank11"
+                android:layout_width="match_parent"
+                android:layout_height="113dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@raw/player11"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_12"
+            android:layout_width="62dp"
+            android:layout_height="115dp"
+            android:layout_gravity="center"
+            card_view:cardCornerRadius="4dp">
+            <TextView
+                android:id="@+id/Rank12"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="113dp"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@raw/player12"
+                />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/blueGray100"
+        app:buttonGravity="bottom|top"
+        app:fabAlignmentMode="end"
+        app:fabCradleRoundedCornerRadius="32dp">
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="normal"
+        app:layout_anchor="@id/bottomAppBar2"
+        app:srcCompat="@raw/ic_left_arrow"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

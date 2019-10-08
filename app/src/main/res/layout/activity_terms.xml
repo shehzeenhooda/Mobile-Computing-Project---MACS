@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presenter.TermsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/blueGray900"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T E R M S"
+            android:textSize="16dp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/textHint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="80dp"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:text="Terms And Conditions"
+        android:textAlignment="center"
+        android:theme="@style/RobotoTextViewStyle"
+        />
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_3"
+        android:layout_width="375dp"
+        android:layout_height="375dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        card_view:cardCornerRadius="16dp"
+        card_view:cardElevation="8dp"
+        android:layout_marginTop="100dp"
+        card_view:layout_constraintLeft_toLeftOf="parent"
+        card_view:layout_constraintRight_toRightOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintHorizontal_bias=".5"
+        card_view:layout_constraintVertical_bias=".1"
+        >
+
+        <TextView
+            android:id="@+id/terms_and_conditions"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/terms_and_conditions"
+            android:justificationMode="inter_word"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/point1"
+            android:textAlignment="viewStart"
+            android:justificationMode="inter_word"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/point2"
+            android:justificationMode="inter_word"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif-thin"
+            android:text="@string/point3"
+            android:justificationMode="inter_word"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="10dp"
+            android:justificationMode="inter_word"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp"
+            android:text="I Accept the Terms and Conditions." />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            app:layout_constraintHorizontal_bias="0.5"
+            android:layout_marginLeft="140dp"
+            android:textAlignment="center"
+            android:text="save" />
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/blueGray100"
+            app:buttonGravity="bottom|top"
+            app:fabAlignmentMode="end"
+            app:fabCradleRoundedCornerRadius="32dp">
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="normal"
+            app:layout_anchor="@id/bottomAppBar2"
+            app:srcCompat="@raw/ic_left_arrow"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

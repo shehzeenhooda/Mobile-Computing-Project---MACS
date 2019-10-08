@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dal.mapleLeafs.shelve12">
+
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="dal.mapleLeafs.shelve12.presenter.TermsActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="dal.mapleLeafs.shelve12.presenter.MedalsActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="dal.mapleLeafs.shelve12.presenter.BuyCardActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="dal.mapleLeafs.shelve12.presenter.XIIStoreActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="dal.mapleLeafs.shelve12.presenter.TutorialActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="dal.mapleLeafs.shelve12.presenter.QRCodeActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="dal.mapleLeafs.shelve12.presenter.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="dal.mapleLeafs.shelve12.presenter.PlayActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:name="dal.mapleLeafs.shelve12.presenter.DashboardActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    />
+                <category
+                    android:name="android.intent.category.LAUNCHER"
+                    />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

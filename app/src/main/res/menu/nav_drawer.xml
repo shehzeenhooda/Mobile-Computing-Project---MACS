@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@raw/ic_action_dashboard"
+            android:title="@string/dashboard" />
+        <item
+            android:id="@+id/store"
+            android:icon="@raw/ic_action_store"
+            android:title="@string/store" />
+        <item
+            android:id="@+id/medals"
+            android:icon="@raw/ic_action_medals"
+            android:title="@string/medals" />
+        <item
+            android:id="@+id/tutorial"
+            android:icon="@raw/ic_action_tutorial"
+            android:title="@string/tutorial" />
+
+        <item
+            android:id="@+id/terms"
+            android:icon="@raw/ic_action_terms"
+            android:title="@string/terms" />
+        <!--<item-->
+            <!--android:id="@+id/action_settings"-->
+            <!--android:icon="@raw/ic_action_settings"-->
+            <!--android:title="@string/action_settings" />-->
+
+    </group>
+
+</menu>
